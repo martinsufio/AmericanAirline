@@ -8,6 +8,13 @@
     android:orientation="vertical"
     tools:context=".LoginActivity">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/american_airlines_logo"/>
+
     <EditText
         android:id="@+id/etLastname"
         android:layout_width="wrap_content"
@@ -17,7 +24,7 @@
         android:layout_gravity="center"
         android:hint="Last name"
         tools:layout_editor_absoluteX="78dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="50dp"
         tools:layout_editor_absoluteY="122dp" />
 
     <EditText

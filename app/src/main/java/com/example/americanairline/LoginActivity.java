@@ -26,9 +26,9 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        if (ParseUser.getCurrentUser() != null) {
-            goToMainActivity();
-        }
+//        if (ParseUser.getCurrentUser() != null) {
+//            goToMainActivity();
+//        }
 
         etlastname = findViewById(R.id.etLastname);
         etusername = findViewById(R.id.etPassword);

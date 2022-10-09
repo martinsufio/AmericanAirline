@@ -2,7 +2,7 @@ package com.example.americanairline;
 
 import java.util.List;
 
-public class Responsepayload {
+public class  Responsepayload {
     private String message;
     private List<ReturnedMerchant> returnedMerchants;
 
