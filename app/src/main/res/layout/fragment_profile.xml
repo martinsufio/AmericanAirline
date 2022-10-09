@@ -30,7 +30,7 @@
             android:textSize="30dp"
             android:layout_margin="10dp"
             android:layout_centerHorizontal="true"
-            android:text="Chikwem Mufasa"
+            android:text="Martins Ufio"
             android:textColor="@color/black"/>
         <TextView
             android:id="@+id/points"
