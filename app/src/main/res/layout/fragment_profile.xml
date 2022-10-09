@@ -1,14 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.ProfileFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
+        android:layout_height="match_parent">
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
 
-</FrameLayout>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_margin="20dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/user_profile_svgrepo_com__1_" />
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:textSize="30dp"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="Mufasa Mustapha"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/points"
+            android:layout_below="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_centerHorizontal="true"
+            android:text="AA POINTS: 780"/>
+
+        <ProgressBar
+            android:id="@+id/progressbar1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            android:indeterminateOnly="false"
+            android:progressDrawable="@drawable/circle"
+            android:progress="60"
+            android:layout_below="@+id/points"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="60%"
+            android:textColor="@color/black"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="430dp"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AAdvantage Gold"
+            android:layout_toRightOf="@+id/progressbar1"
+            android:layout_marginTop="420dp"
+            android:textColor="@color/black"
+            android:textSize="30dp"/>
+
+        <ProgressBar
+            android:id="@+id/progressbar2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentRight="true"
+            android:indeterminateOnly="false"
+            android:progressDrawable="@drawable/circle"
+            android:progress="40"
+            android:layout_below="@+id/progressbar1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="40%"
+            android:textColor="@color/black"
+            android:layout_marginLeft="85dp"
+            android:layout_below="@+id/progressbar1"
+            android:layout_marginTop="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70dp"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="AAdvantage Platinum"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="60dp"
+            android:layout_below="@id/progressbar1"
+            android:textColor="@color/black"
+            android:textSize="30dp"/>
+    </RelativeLayout>
+
+
+
+
+</ScrollView>

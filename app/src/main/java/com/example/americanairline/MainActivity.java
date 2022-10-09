@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
 
@@ -16,6 +17,7 @@ import com.example.americanairline.fragments.HomeFragment;
 import com.example.americanairline.fragments.ProfileFragment;
 import com.example.americanairline.fragments.TripsFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
@@ -53,10 +55,29 @@ public class MainActivity extends AppCompatActivity {
         viewPager2.setPageTransformer(new DepthPageTransformer());
         setBottomNavigation();
         setViewPagerListener();
-//        bottomNavigationView.setOnNavigationItemReselectedListener(new BottomNavigationView.OnNavigationItemReselectedListener() {
+//        bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
 //            @Override
-//            public void onNavigationItemReselected(@NonNull MenuItem item) {
-//                HomeFragment;
+//            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+//                Fragment fragment;
+//                switch (item.getItemId()) {
+//                    case R.id.menuhome:
+//                        fragment = new HomeFragment();
+//                        break;
+//                    case R.id.menuFlightStatus:
+//                        fragment = new FlightStatusFragment();
+//                        break;
+//                    case R.id.menuTrip:
+//                        fragment = new TripsFragment();
+//                        break;
+//                    case R.id.menuProfile:
+//                        fragment = new ProfileFragment();
+//                        break;
+//                    default:
+//                        fragment = new HomeFragment();
+//                        break;
+//                }
+//                fragmentManager.beginTransaction().replace(R.id.rlContainer, fragment).commit();
+//                return true;
 //            }
 //        });
     }

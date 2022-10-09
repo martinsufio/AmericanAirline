@@ -110,9 +110,11 @@
             />
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvProducts"
             android:layout_below="@+id/tvExplore"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
             android:layout_margin="20dp"
             />
     </RelativeLayout>
